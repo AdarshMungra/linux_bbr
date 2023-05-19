@@ -69,6 +69,7 @@
  * Since the minimum window is >=4 packets, the lower bound isn't
  * an issue. The upper bound isn't an issue with existing technologies.
  */
+ 
 #define BW_SCALE 24
 #define BW_UNIT (1 << BW_SCALE)
 
