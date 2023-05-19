@@ -930,6 +930,7 @@ static void bbr_check_probe_rtt_done(struct sock *sk)
  * re-enter the previous mode. BBR uses 200ms to approximately bound the
  * performance penalty of PROBE_RTT's cwnd capping to roughly 2% (200ms/10s).
  *
+ *
  * Note that flows need only pay 2% if they are busy sending over the last 10
  * seconds. Interactive applications (e.g., Web, RPCs, video chunks) often have
  * natural silences or low-rate periods within 10 seconds where the rate is low
